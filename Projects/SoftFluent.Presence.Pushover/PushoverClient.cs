@@ -147,7 +147,7 @@ namespace SoftFluent.Presence.Pushover
                 response = (HttpWebResponse)ex.Response;
                 string responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
 
-                _log.ErrorFormat("Error {0} ({1}) received : {1}", (int)response.StatusCode, response.StatusCode, responseString);
+                _log.ErrorFormat("Error {0} ({1}) received : {2}", (int)response.StatusCode, response.StatusCode, responseString);
 
                 return JsonConvert.DeserializeObject<PushoverResponse>(responseString);
             }
