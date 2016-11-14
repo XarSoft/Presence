@@ -14,5 +14,5 @@ Si personne1 OU personne2 arrive à la maison alors on arrête l’alarme et on 
 Le service Windows doit être mit dans le répertoire «C:\Program Files (x86)\SoftFluent\Presence\ »
 Pour installer le service Windows il faut lancer « Install.bat » si vous voulez spécifier un compte particulier ou lancer « InstallLocalSystem.bat » pour installer le service Windows avec le compte local system. 
 Il ne reste plus qu’à démarrer le service manuellement après l’installation.
-Avant de déployer une nouvelle version du service Windows bien penser à le désinstaller avant avec « UnInstall.bat »
+Avant de déployer une nouvelle version du service Windows penser bien à le désinstaller avant avec « UnInstall.bat »
  
