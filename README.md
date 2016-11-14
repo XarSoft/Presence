@@ -1,6 +1,6 @@
 # Presence
 
-Ce projet est un exemple de l’implémentation de l'API Pushover.
+Ce projet est un exemple d’implémentation de l'API Pushover.
 Le projet contient un service windows (SoftFluent.Presence.Host) qui host un service à l'adresse "http://localhost:8092/PresenceService"
 Lorsque l'on appelle l'URL "localhost:8092/PresenceService/set/AtWork" une notification est envoyée via l'API Pushover pour signaler qu'on arrive à un endroit, en l'occurrence ici sur le lieu du travail.
 Lorsque l'on appelle l'URL "localhost:8092/PresenceService/remove/AtWork" une notification est envoyée via l'API Pushover pour signaler que l’on quitte un lieu.
