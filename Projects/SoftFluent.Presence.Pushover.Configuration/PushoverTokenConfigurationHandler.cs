@@ -30,7 +30,7 @@ namespace SoftFluent.Presence.Pushover.Configuration
                     _current = ConfigurationManager.GetSection(SectionName) as PushoverTokenConfigurationHandler;
                     if (_current == null)
                     {
-                        throw new ConfigurationException("Missing '" + SectionName + "' section in " + AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+                        throw new ConfigurationErrorsException("Missing '" + SectionName + "' section in " + AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
                     }
                 }
 

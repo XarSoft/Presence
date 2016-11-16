@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigurationException.cs" />
     <Compile Include="PushoverConfigurationHandler.cs" />
     <Compile Include="PushoverTokenConfigurationElement.cs" />
     <Compile Include="PushoverTokenConfigurationElementCollection.cs" />
