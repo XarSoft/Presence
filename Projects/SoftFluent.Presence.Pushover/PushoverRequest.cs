@@ -17,8 +17,9 @@ namespace SoftFluent.Presence.Pushover
         public string UrlTitle { get; private set; }
         public int? Retry { get; private set; }
         public int? Expire { get; private set; }
-        public DateTime? TimeStamp { get; private set; }
-        public bool? UseHtml { get; private set; }
+        
+        public DateTime? TimeStamp { get; set; }
+        public bool? UseHtml { get; set; }
         public string CallbackUrl { get; set; }
         private PushoverRequest()
         {
