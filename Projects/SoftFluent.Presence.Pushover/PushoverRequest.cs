@@ -41,14 +41,14 @@ namespace SoftFluent.Presence.Pushover
             return CreateRequest(message, title, url, urlTitle, null, null, priority, null, devices);
         }
 
-        public static PushoverRequest CreateRequest(string message, string title, int? retry, int? expire, PushoverPriorityNotificationType priority, params string[] devices)
+        public static PushoverRequest CreateRequest(string message, string title, int retry, int expire, params string[] devices)
         {
-            return CreateRequest(message, title, null, null, retry, expire, priority, null, devices);
+            return CreateRequest(message, title, null, null, retry, expire, PushoverPriorityNotificationType.EmergencyPriority, null, devices);
         }
 
-        public static PushoverRequest CreateRequest(string message, string title, string url, string urlTitle, int? retry, int? expire, PushoverPriorityNotificationType priority, params string[] devices)
+        public static PushoverRequest CreateRequest(string message, string title, string url, string urlTitle, int retry, int expire, params string[] devices)
         {
-            return CreateRequest(message, title, url, urlTitle, retry, expire, priority, null, devices);
+            return CreateRequest(message, title, url, urlTitle, retry, expire, PushoverPriorityNotificationType.EmergencyPriority, null, devices);
         }
 
         public static PushoverRequest CreateRequest(string message, string title, PushoverPriorityNotificationType priority, PushoverSoundType? sound, params string[] devices)
@@ -61,9 +61,9 @@ namespace SoftFluent.Presence.Pushover
             return CreateRequest(message, title, url, urlTitle, null, null, priority, sound, devices);
         }
 
-        public static PushoverRequest CreateRequest(string message, string title, int? retry, int? expire, PushoverPriorityNotificationType priority, PushoverSoundType? sound, params string[] devices)
+        public static PushoverRequest CreateRequest(string message, string title, int retry, int expire, PushoverSoundType? sound, params string[] devices)
         {
-            return CreateRequest(message, title, null, null, retry, expire, priority, sound, devices);
+            return CreateRequest(message, title, null, null, retry, expire, PushoverPriorityNotificationType.EmergencyPriority, sound, devices);
         }
 
         public static PushoverRequest CreateRequest(string message, string title, string url, string urlTitle, int? retry, int? expire, PushoverPriorityNotificationType? priority, PushoverSoundType? sound, params string[] devices)
