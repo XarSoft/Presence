@@ -11,7 +11,7 @@ namespace SoftFluent.Presence.Pushover
         LowestPriority = -2,
         LowPriority = -1,
         NormalPriority = 0,
-        HightPriority = 1,
+        HighPriority = 1,
         EmergencyPriority = 2
     }
 }
