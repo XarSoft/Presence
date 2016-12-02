@@ -108,7 +108,7 @@ namespace SoftFluent.Presence.Pushover
                 }
                 if (pushoverRequest.Url != null)
                 {
-                    postData += "&url=" + pushoverRequest.Url;
+                    postData += "&url=" + WebUtility.UrlEncode(pushoverRequest.Url);
                 }
                 if (pushoverRequest.UrlTitle != null)
                 {
